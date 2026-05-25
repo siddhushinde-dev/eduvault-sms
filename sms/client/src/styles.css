@@ -1,0 +1,86 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #0a0a0f;
+  color: #f0f0f8;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Input focus */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgba(110, 231, 247, 0.35) !important;
+  box-shadow: 0 0 0 2px rgba(110, 231, 247, 0.08);
+}
+
+/* Select options */
+option {
+  background: #12121a;
+  color: #d0d0e8;
+}
+
+/* Table row hover */
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+/* Recharts */
+.recharts-surface {
+  overflow: visible;
+}
+.recharts-cartesian-axis-tick-value {
+  fill: #5a5a7a;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Utility */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
